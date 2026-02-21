@@ -166,3 +166,18 @@ body {
   color: #b4b4b4;
   font-size: 14px;
 }
+
+/* --- Loading / Error states --- */
+.loading {
+  padding: 32px;
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+.error {
+  padding: 8px 16px;
+  color: #ff6b6b;
+  font-size: 13px;
+  text-align: center;
+}

@@ -5,16 +5,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "node --watch server/index.js",
+    "dev:all": "concurrently \"pnpm server\" \"pnpm dev\"",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.4",
+    "concurrently": "^9.1.2",
     "typescript": "~5.9.3",
     "vite": "^7.3.1"
   },
   "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["better-sqlite3", "esbuild"]
   }
 }
